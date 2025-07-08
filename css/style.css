@@ -5,50 +5,21 @@
 
 
 /* HEADER */
-.main-header{
+.main-header {
   position: sticky;
   top: 0;
   z-index: 999;
   background-color: black;
   width: 100%;
-
-    /* transition: opacity 0.4s ease; */
 }
 
-/* .main-header:hover {
-  opacity: 0;
-  pointer-events: none;
-} */
-
-.header{
+.header {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
-
-    /* background-color: black; */
 }
 
-.header-wraper{
-  display: flex;
-
-  justify-content: space-between;
-    /* align-items: center; */
-}
-
-.navigation{
-  width: 750px;
-    /* height: 45px; */
-}
-.nav-ul{
-  display: flex;
-  justify-content: center;
-
-  align-items: center;
-  /* margin-top: 32px; */
-  column-gap: 24px;
-    
-}
-
+/*  */
 .h-a{
   font-size: 16px;
   color: #EBEBEB;
@@ -66,25 +37,54 @@
   text-decoration: underline;
 }
 
-.logo img {
-  max-width: 280px;
-  width: 100%; 
-}
+/*  */
 
-.burger img {
-  max-width: 30px;
-  width: 100%; 
-}
-
-.right-box{
-  max-width: 800px;
-  width: 100%;
-
+.header-wraper {
   display: flex;
-
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
 }
+
+/* Logo */
+.logo {
+  flex-shrink: 0;
+  min-width: 100px;
+}
+
+.logo img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+}
+
+/* Navigation + Burger */
+.right-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation {
+  display: block;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* Burger Icon */
+.burger-icon {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
 
 
 /* section - 1 */
@@ -731,6 +731,32 @@ body {
 
 
 /* Responsive */
+/* header */
+@media screen and (max-width: 1024px) {
+  .nav-ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: #111;
+    width: 200px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .nav-ul.show {
+    display: flex;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+
+  .navigation {
+    flex-grow: 1;
+  }
+}
 
 /* for section 1 */
 @media (max-width: 768px) {
