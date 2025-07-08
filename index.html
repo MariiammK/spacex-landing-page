@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+
+
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poetsen+One&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" href="https://companieslogo.com/img/orig/spacex.D-801db515.png?t=1720244494">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header">
+            <div class="header-wraper">
+                <div class="logo">
+                    <img src="images/spaceX.png" alt="logo">
+                </div>
+
+                <div class="right-box">
+                    <nav class="navigation">
+                        <ul class="nav-ul">
+                            <li class="nav-li">
+                                <a class="h-a" href="#">FALCON 9</a>
+                            </li>
+                            <li class="nav-li">
+                                <a class="h-a" href="#">FACLON HEAVY</a>
+                            </li>
+                            <li class="nav-li">
+                                <a class="h-a" href="#">DRAGON</a>
+                            </li>
+                            <li class="nav-li">
+                                <a class="h-a" href="#">STARSHIP</a>
+                            </li>
+
+                            <li class="nav-li">
+                                <a class="h-a" href="#">HUMAN SPACEFLIGHT</a>
+                            </li>
+                            <li class="nav-li">
+                                <a class="h-a" href="">STARLINK</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button id="burgerBtn" class="burger-icon" aria-label="Toggle menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- section 1 -->
+    <section class="section1">
+        <div class="Mars">
+            <div class="bg-image">
+                <div class="content1">
+                    <h1 class="hero-title">THE WAY FORWARD TO A MULTIPLANETARY CIVILIZATION</h1>
+                    <a href="#" class="btn-learn">LEARN MORE</a>
+                    <!-- <img class="scroll1" src="images/Frame_27.png" alt="Scroll Down"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- secction 2 -->
+    <section class="section2">
+        <div class="wrap1">
+            <div class="starship-img">
+                <div class="starship-content">
+                    <h5 class="starship-title1">RECENT LAUNCH</h5>
+                    <h1 class="starship-title2">Starship's Ninth Flight Test</h1>
+                    <a href="https://www.youtube.com/watch?v=5KWYZR_Gc60" class="btn-rewatch">REWATCH</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- section -  Animation with JS -->
+    <section class="animationJs">
+        <div class="falconHeavy-img">
+            <div class="falconheavy-text">FALCON HEAVY</div>
+        </div>
+        <div class="anim-boxes">
+            <div class="boxes">
+                <div class="box">
+                    <div class="number" data-val="11">0</div>
+                    <p class="cm">COMPLETED MISSIONS</p>
+                </div>
+                <div class="box">
+                    <div class="number" data-val="19">0</div>
+                    <p class="cm">TOTAL LANDINGS</p>
+                </div>
+                <div class="box">
+                    <div class="number" data-val="16">0</div>
+                    <p class="cm">TOTAL REFLIGHTS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section  -     Falcon 9 -->
+     <section class="falcon-9">
+        <div class="falcon-title">
+            <h1 class="f9-t">FALCON 9</h1>
+        </div>
+
+        <div class="falcon-info">
+            <div class="falcon-img">
+                <img class="falc-9-1-img" src="images/falcon9-1.png" alt="Falcon-9">
+                <img class="falc-9-2-img" src="images/falcon9-2.jpg" alt="Falcon 9">
+            </div>
+            <div class="falcon-text">
+                <p class="falcon9-p">Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond. Falcon 9 is the world’s first orbital class reusable rocket. Reusability allows SpaceX to refly the most expensive parts of the rocket, which in turn drives down the cost of space access.</p>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- section -  missions-container -->
+    <section id="missions-container">
+        <h2 class="api-title">Mission Info From SpaceX API</h2>
+    </section>
+
+
+    <!-- section  -  Registration Form -->
+     <section class="reg-form">
+        <div class="form-container">
+            <div class="registration-title">
+                <h2>Join the Mission</h2>
+            </div>
+            <form action="" id="registration">
+                <div>
+                    <input type="text" name="username" id="usernamefield" placeholder="Name"/>
+                    <p class="error-t" id="error-username"></p>
+                </div>
+                <div>
+                    <input type="email" name="email-field" id="email" placeholder="Email"/>
+                    <!-- <p id="error-email"></p> -->
+                    <p class="error-t" id="error-email"></p>
+                </div>
+                <div>
+                    <input type="password" name="password" id="passwordfield" placeholder="Password"/>
+                    <p class="error-t" id="error-password"></p>
+                </div>
+                <div>
+                    <input type="password" name="password2" id="passwordfield2" placeholder="Repeat Password"/>
+                    <p class="error-t" id="error-password2"></p>
+                </div>
+                <label class="show-password-label">
+                    <input type="checkbox" id="showPasswordCheckbox">Show Password</label>
+
+                <button id="submit-btn">Submit</button>
+            </form>
+        </div>        
+     </section>
+
+
+
+    <div class="cookies-eu-banner hidden">
+        By clicking ”Accept”, you agree to the storing of cookies on your device to
+        enhance site navigation, analyze site usage, and improve marketing.
+        <button>Accept</button>
+    </div>
+
+
+
+    <!-- section  -  footer -->
+     <section class="main-footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About SpaceX</a></li>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Media Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Supplier Code</a></li>
+        <li><a href="#">Compliance</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 SpaceX | All Rights Reserved</p>
+  </div>
+</section>
+
+
+
+    <!-- scripts.js -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
